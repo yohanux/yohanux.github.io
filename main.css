@@ -24,26 +24,35 @@ font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, '
 @-moz-keyframes fadein { /* Firefox */
     from {
         opacity:0;
+        transform: translateY(50px)
     }
     to {
         opacity:1;
+        transform: translateY( 0px)
     }
+
 }
 @-webkit-keyframes fadein { /* Safari and Chrome */
     from {
         opacity:0;
+        transform: translateY(50px)
     }
     to {
         opacity:1;
+        transform: translateY( 0px)
     }
+
 }
 @-o-keyframes fadein { /* Opera */
     from {
         opacity:0;
+        transform: translateY(50px)
     }
     to {
-        opacity: 1;
+        opacity:1;
+        transform: translateY( 0px)
     }
+
 }
 
 
