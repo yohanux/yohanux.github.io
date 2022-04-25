@@ -5,52 +5,52 @@ font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, '
 }
 
 #fadein {
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
 }
 @keyframes fadein {
     from {
         opacity:0;
-        transform: translateY(50px)
+        transform: translateY(60px)
     }
     to {
         opacity:1;
-        transform: translateY( 0px)
+        transform: translateY(0px)
     }
 
 }
 @-moz-keyframes fadein { /* Firefox */
     from {
         opacity:0;
-        transform: translateY(50px)
+        transform: translateY(60px)
     }
     to {
         opacity:1;
-        transform: translateY( 0px)
+        transform: translateY(0px)
     }
 
 }
 @-webkit-keyframes fadein { /* Safari and Chrome */
     from {
         opacity:0;
-        transform: translateY(50px)
+        transform: translateY(60px)
     }
     to {
         opacity:1;
-        transform: translateY( 0px)
+        transform: translateY(0px)
     }
 
 }
 @-o-keyframes fadein { /* Opera */
     from {
         opacity:0;
-        transform: translateY(50px)
+        transform: translateY(60px)
     }
     to {
         opacity:1;
-        transform: translateY( 0px)
+        transform: translateY(0px)
     }
 
 }
