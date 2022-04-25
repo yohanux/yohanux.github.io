@@ -1,7 +1,101 @@
-h1{
-    color: red;
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+* { 
+font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
 }
 
+#fadein {
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+        transform: translateY(50px)
+    }
+    to {
+        opacity:1;
+        transform: translateY( 0px)
+    }
+
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+body{
+font-family: 'Pretendard';
+}
+
+#header{
+    height: 68px;
+    display: block;
+}
+.container{
+    margin: 0 auto;
+    padding: 52px;
+}
+
+a {text-decoration: none;}
+a:link { /*링크 방문 전*/
+        color:#333333;
+    }
+     
+    a:visited { /*링크를 방문한 이후*/
+        color: #333333;
+    }
+     
+    a:hover { /*마우스를 올려놓을 때*/
+        color: #0068ff;
+    }
+     
+    a:active { /*클릭하는 순간*/
+        color: #333333;
+    
+    }
+
+h1{
+    color: #111111; font-size: 160px; font-weight: 900; line-height: 1.2;
+}
+h2{
+    color: #333333; font-size: 80px; font-weight: bold;
+}
+h3{
+    color: #333333; font-size: 24px; font-weight: bold;
+}
+h4{
+    color: #666666; font-size: 16px; font-weight: medium;
+}
+h5{
+    color: #666666; font-size: 14px; font-weight: medium;
+}
+h6{
+    color: #999999; font-size: 12px; font-weight: thin;
+}
 body {
     color: orange;
 }
@@ -12,4 +106,3 @@ body {
 .container .item img {
     width: 500px;
 }
- 
