@@ -4,16 +4,69 @@
 font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
 }
 
+body {margin: 0;
+}
+
+header {
+    margin-top: 80px;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.nav-container {
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0%;
+    backdrop-filter: blur(20px);
+    list-style-type: none;
+    position: fixed;
+    top:0;
+}
+
+.nav-item {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.nav-item a {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+a:link { /*링크 방문 전*/
+    color:#333333;
+}
+ 
+a:visited { /*링크를 방문한 이후*/
+    color: #333333;
+}
+ 
+a:hover { /*마우스를 올려놓을 때*/
+    color: #2c63f6;
+}
+ 
+a:active { /*클릭하는 순간*/
+    color: #333333;
+
+}
+
 #fadein {
-    animation: fadein 1.5s;
-    -moz-animation: fadein 1.5s; /* Firefox */
-    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
-    -o-animation: fadein 1.5s; /* Opera */
+    animation: fadein 1.2s;
+    -moz-animation: fadein 1.2s; /* Firefox */
+    -webkit-animation: fadein 1.2s; /* Safari and Chrome */
+    -o-animation: fadein 1.2s; /* Opera */
 }
 @keyframes fadein {
     from {
         opacity:0;
-        transform: translateY(60px)
+        transform: translateY(120px)
     }
     to {
         opacity:1;
@@ -24,7 +77,7 @@ font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, '
 @-moz-keyframes fadein { /* Firefox */
     from {
         opacity:0;
-        transform: translateY(60px)
+        transform: translateY(120px)
     }
     to {
         opacity:1;
@@ -35,7 +88,7 @@ font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, '
 @-webkit-keyframes fadein { /* Safari and Chrome */
     from {
         opacity:0;
-        transform: translateY(60px)
+        transform: translateY(120px)
     }
     to {
         opacity:1;
@@ -46,27 +99,13 @@ font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, '
 @-o-keyframes fadein { /* Opera */
     from {
         opacity:0;
-        transform: translateY(60px)
+        transform: translateY(120px)
     }
     to {
         opacity:1;
         transform: translateY(0px)
     }
 
-}
-
-
-body{
-font-family: 'Pretendard';
-}
-
-#header{
-    height: 68px;
-    display: block;
-}
-.container{
-    margin: 0 auto;
-    padding: 52px;
 }
 
 a {text-decoration: none;}
@@ -88,7 +127,7 @@ a:link { /*링크 방문 전*/
     }
 
 h1{
-    color: #111111; font-size: 160px; font-weight: 900; line-height: 1.2;
+    color: #111111; font-size: 120px; font-weight: 700; line-height: 1.4;
 }
 h2{
     color: #333333; font-size: 80px; font-weight: bold;
@@ -113,5 +152,24 @@ body {
     display: flex;
 }
 .container .item img {
-    width: 500px;
+    width: 800px;
+}
+
+.fadein2 {
+    animation: fadein 1.2s;
+    -moz-animation: fadein 1.2s; /* Firefox */
+    -webkit-animation: fadein 1.2s; /* Safari and Chrome */
+    -o-animation: fadein 1.2s; /* Opera */
+}
+
+@-webkit-keyframes fadein2 { /* Safari and Chrome */
+    from {
+        opacity:0;
+        transform: translateY(120px)
+    }
+    to {
+        opacity:1;
+        transform: translateY(0px)
+    }
+
 }
