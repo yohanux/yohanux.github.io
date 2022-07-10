@@ -1,0 +1,175 @@
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+* { 
+font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+body {margin: 0;
+}
+
+header {
+    margin-top: 80px;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.nav-container {
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0%;
+    backdrop-filter: blur(20px);
+    list-style-type: none;
+    position: fixed;
+    top:0;
+}
+
+.nav-item {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.nav-item a {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+a:link { /*링크 방문 전*/
+    color:#6B7684;
+}
+ 
+a:visited { /*링크를 방문한 이후*/
+    color: #6B7684;
+}
+ 
+a:hover { /*마우스를 올려놓을 때*/
+    color: #2c63f6;
+}
+ 
+a:active { /*클릭하는 순간*/
+    color: #6B7684;
+
+}
+
+#fadein {
+    animation: fadein 1.2s;
+    -moz-animation: fadein 1.2s; /* Firefox */
+    -webkit-animation: fadein 1.2s; /* Safari and Chrome */
+    -o-animation: fadein 1.2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+        transform: translateY(120px)
+    }
+    to {
+        opacity:1;
+        transform: translateY(0px)
+    }
+
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+        transform: translateY(120px)
+    }
+    to {
+        opacity:1;
+        transform: translateY(0px)
+    }
+
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+        transform: translateY(120px)
+    }
+    to {
+        opacity:1;
+        transform: translateY(0px)
+    }
+
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+        transform: translateY(120px)
+    }
+    to {
+        opacity:1;
+        transform: translateY(0px)
+    }
+
+}
+
+a {text-decoration: none;}
+a:link { /*링크 방문 전*/
+        color:#6B7684;
+    }
+     
+    a:visited { /*링크를 방문한 이후*/
+        color: #6B7684;
+    }
+     
+    a:hover { /*마우스를 올려놓을 때*/
+        color: #0068ff;
+    }
+     
+    a:active { /*클릭하는 순간*/
+        color: #6B7684;
+    
+    }
+
+h1{
+    color: #191F28; font-size: 100px; font-weight: 800; line-height: 1.4;
+}
+h2{
+    color: #333333; font-size: 80px; font-weight: bold;
+}
+h3{
+    color: #6B7684; font-size: 24px; font-weight: bold;
+}
+h4{
+    color: #666666; font-size: 16px; font-weight: medium;
+}
+h5{
+    color: #666666; font-size: 14px; font-weight: medium;
+}
+h6{
+    color: #999999; font-size: 12px; font-weight: thin;
+}
+body {
+    color: orange;
+}
+
+.container{
+    display: flex;
+}
+.container .item img {
+    width: 800px;
+}
+
+.fadein2 {
+    animation: fadein 1.2s;
+    -moz-animation: fadein 1.2s; /* Firefox */
+    -webkit-animation: fadein 1.2s; /* Safari and Chrome */
+    -o-animation: fadein 1.2s; /* Opera */
+}
+
+@-webkit-keyframes fadein2 { /* Safari and Chrome */
+    from {
+        opacity:0;
+        transform: translateY(120px)
+    }
+    to {
+        opacity:1;
+        transform: translateY(0px)
+    }
+
+}
