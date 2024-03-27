@@ -1,5 +1,7 @@
 body{
-margin: 0px;
+margin: auto;
+display: flex;
+flex-direction: column;
 padding-top: 200px;
 background-color: #F4F5F7;
 font-family: 'Pretendard';
@@ -12,9 +14,11 @@ left: 0;
 right: 0;
 }
 
-main{
+section{
+margin: auto;
+display: flex;
 flex-direction: column;
-gap: 100px;
+gap: 0px;
 }
 
 .navbar{
@@ -168,7 +172,7 @@ word-wrap: break-word"
 
 footer{
 box-sizing: border-box;
-height: 80px;
+height: 120px;
 display: flex;
 flex-direction : column;
 align-items: center;
@@ -187,6 +191,11 @@ font-size: 14px;
 font-family: Pretendard;
 font-weight: 400;
 line-height: 16px;
+}
+
+.icons{
+gap: 6px;
+display: flex;
 }
 
 .copyright{
